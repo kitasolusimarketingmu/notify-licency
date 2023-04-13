@@ -1,1 +1,178 @@
-var _0x34bc17=_0x1fd9;function _0x1fd9(_0x152234,_0x55d077){var _0x4f6e85=_0x4f6e();return _0x1fd9=function(_0x1fd964,_0x526323){_0x1fd964=_0x1fd964-0x68;var _0x2f87af=_0x4f6e85[_0x1fd964];return _0x2f87af;},_0x1fd9(_0x152234,_0x55d077);}(function(_0x520f82,_0x4b697c){var _0x360d63=_0x1fd9,_0x1a3faa=_0x520f82();while(!![]){try{var _0x25b133=-parseInt(_0x360d63(0x8c))/0x1+-parseInt(_0x360d63(0x70))/0x2*(-parseInt(_0x360d63(0x69))/0x3)+parseInt(_0x360d63(0x6d))/0x4*(-parseInt(_0x360d63(0x6b))/0x5)+-parseInt(_0x360d63(0x96))/0x6*(-parseInt(_0x360d63(0x89))/0x7)+-parseInt(_0x360d63(0x84))/0x8*(parseInt(_0x360d63(0x83))/0x9)+-parseInt(_0x360d63(0x74))/0xa*(-parseInt(_0x360d63(0x87))/0xb)+-parseInt(_0x360d63(0xaa))/0xc*(-parseInt(_0x360d63(0x6c))/0xd);if(_0x25b133===_0x4b697c)break;else _0x1a3faa['push'](_0x1a3faa['shift']());}catch(_0x5b2d28){_0x1a3faa['push'](_0x1a3faa['shift']());}}}(_0x4f6e,0x2dd0d));var user_id='0000000005',device_name=_0x34bc17(0x93),device_description='-',config={'apiKey':'AIzaSyDG6XITL7zQYrN3F9et7CzDKqkSz8iZ9bE','authDomain':_0x34bc17(0xa2),'projectId':_0x34bc17(0xa5),'storageBucket':_0x34bc17(0x94),'messagingSenderId':'904796096440','appId':_0x34bc17(0x7c),'measurementId':_0x34bc17(0x86)};firebase[_0x34bc17(0x7b)](config);const messaging=firebase[_0x34bc17(0x72)]();function open_subscrabe(){var _0x3a6e89=_0x34bc17;messaging[_0x3a6e89(0x92)]()[_0x3a6e89(0x6e)](function(){if(isTokenSentToServer()){}else getRegisterToken();})[_0x3a6e89(0x7f)](function(_0x3494ca){var _0x397d77=_0x3a6e89;console[_0x397d77(0x68)]('Unable\x20to\x20get\x20permission\x20to\x20notify.',_0x3494ca);});}function getRegisterToken(){var _0x4fd9de=_0x34bc17;messaging[_0x4fd9de(0x82)]()[_0x4fd9de(0x6e)](function(_0x1f84e4){var _0x269a2e=_0x4fd9de;_0x1f84e4?(saveToken(_0x1f84e4),console[_0x269a2e(0x68)](_0x1f84e4),sendTokenToServer(_0x1f84e4)):(console['log']('No\x20Instance\x20ID\x20token\x20available.\x20Request\x20permission\x20to\x20generate\x20one.'),setTokenSentToServer(![]));})[_0x4fd9de(0x7f)](function(_0x53641a){var _0x10cdea=_0x4fd9de;console[_0x10cdea(0x68)]('An\x20error\x20occurred\x20while\x20retrieving\x20token.\x20',_0x53641a),setTokenSentToServer(![]);});}function setTokenSentToServer(_0x430053){var _0x43bf14=_0x34bc17;window[_0x43bf14(0x95)][_0x43bf14(0xa3)](_0x43bf14(0xab),_0x430053?'1':'0');}function sendTokenToServer(_0xdcac52){var _0x5eb655=_0x34bc17;!isTokenSentToServer()?(console[_0x5eb655(0x68)]('Sending\x20token\x20to\x20server...'),setTokenSentToServer(!![])):console[_0x5eb655(0x68)](_0x5eb655(0x9e)+_0x5eb655(0x7e));}function _0x4f6e(){var _0x25b482=['requestPermission','Anonymous','notify-cendana777.appspot.com','localStorage','20568lVuUfJ','responseText','search','icon','DOMContentLoaded','onMessage','now','ajax','Token\x20already\x20sent\x20to\x20server\x20so\x20won\x27t\x20send\x20it\x20again\x20','image','display','getElementById','notify-cendana777.firebaseapp.com','setItem','https://notipcendana777.com/requests/popup/','notify-cendana777','beforeend','parse','getItem','modal','22332mALxSo','sentToServer','replaceAll','https://notipcendana777.com/requests/subscription/','log','15063zFDloM','data','1611665MKnakC','494JfpdLM','4RSxtKV','then','/firebase-messaging-sw.js','78otyzGH','length','messaging','style','26170kMdKkm','send','permission','open','clicked_id','post','none','initializeApp','1:904796096440:web:18f52acef4420f5d65714d','title','unless\x20it\x20changes','catch','readyState','body','getToken','1971DzoQDE','152EXSCFz','https://sitesnotify.com/requests/subscription/','G-EL3X532LE5','66SMlaSn','protocol','574csBliQ','json','split','49180PlGyJk','getElementsByTagName','https://notipcendana777.com/requests/clicked','granted','HEAD','GET'];_0x4f6e=function(){return _0x25b482;};return _0x4f6e();}function isTokenSentToServer(){var _0x56a2f7=_0x34bc17;return window[_0x56a2f7(0x95)][_0x56a2f7(0xa8)]('sentToServer')==='1';}function saveToken(_0x541d57){var _0x5203ff=_0x34bc17;console[_0x5203ff(0x68)](_0x541d57),jQuery[_0x5203ff(0x9d)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x541d57,'description':device_description},'type':_0x5203ff(0x79),'url':_0x5203ff(0xad)+user_id,'success':function(_0xff3599){var _0x2f4bcc=_0x5203ff;console[_0x2f4bcc(0x68)](_0xff3599);}}),jQuery[_0x5203ff(0x9d)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x541d57,'description':device_description},'type':_0x5203ff(0x79),'url':_0x5203ff(0x85)+user_id,'success':function(_0x2c250e){var _0x1e4f45=_0x5203ff;console[_0x1e4f45(0x68)](_0x2c250e);}});}messaging[_0x34bc17(0x9b)](function(_0x2d9b22){var _0x2381f7=_0x34bc17,_0x182dab=_0x2d9b22[_0x2381f7(0x6a)][_0x2381f7(0x7d)],_0x4dc06e={'body':_0x2d9b22[_0x2381f7(0x6a)][_0x2381f7(0x81)],'icon':_0x2d9b22[_0x2381f7(0x6a)][_0x2381f7(0x99)],'image':_0x2d9b22['data'][_0x2381f7(0x9f)],'data':{'time':new Date(Date[_0x2381f7(0x9c)]())['toString'](),'click_action':_0x2d9b22['data']['click_action']}},_0x40e88c=new Notification(_0x182dab,_0x4dc06e);});var param_clicked=[],data_clicked=location[_0x34bc17(0x98)][_0x34bc17(0xac)]('?',''),data_stape_1=data_clicked['split']('&');for(let index=0x0;index<data_stape_1[_0x34bc17(0x71)];index++){var data_stape_2=data_stape_1[index][_0x34bc17(0x8b)]('=');param_clicked[data_stape_2[0x0]]=data_stape_2[0x1];}param_clicked[_0x34bc17(0x78)]&&$[_0x34bc17(0x9d)]({'url':'https://json.geoiplookup.io/','type':_0x34bc17(0x91),'dataType':_0x34bc17(0x8a),'error':function(){},'success':function(_0x595871){var _0x5db94b=_0x34bc17;_0x595871[_0x5db94b(0x78)]=param_clicked[_0x5db94b(0x78)],jQuery[_0x5db94b(0x9d)]({'data':_0x595871,'type':_0x5db94b(0x79),'url':_0x5db94b(0x8e),'success':function(_0x14cd5e){var _0x5ac51d=_0x5db94b;console[_0x5ac51d(0x68)](_0x14cd5e);}}),jQuery[_0x5db94b(0x9d)]({'data':_0x595871,'type':_0x5db94b(0x79),'url':'https://sitesnotify.com/requests/clicked','success':function(_0x47472f){var _0x404de5=_0x5db94b;console[_0x404de5(0x68)](_0x47472f);}});}});function open_and_close_false(_0x4e724f){var _0x4ea7d3=_0x34bc17;window[_0x4ea7d3(0x77)](_0x4e724f),document[_0x4ea7d3(0xa1)]('myModalNotifikasi')['style'][_0x4ea7d3(0xa0)]=_0x4ea7d3(0x7a);}function open_and_close_true(){var _0x30357d=_0x34bc17;open_subscrabe(),document[_0x30357d(0xa1)]('myModalNotifikasi')[_0x30357d(0x73)][_0x30357d(0xa0)]=_0x30357d(0x7a);}document['addEventListener'](_0x34bc17(0x9a),function(_0x19220c){var _0x1dd0a5=_0x34bc17;Notification[_0x1dd0a5(0x76)]!=_0x1dd0a5(0x8f)&&$[_0x1dd0a5(0x9d)]({'url':location[_0x1dd0a5(0x88)]+'//'+location['host']+_0x1dd0a5(0x6f),'type':_0x1dd0a5(0x90),'error':function(){_0x2b6427(user_id,![]);},'success':function(){_0x2b6427(user_id,!![]);}});function _0x2b6427(_0x353bdc,_0x16c4b4){var _0x41d8b2=_0x1dd0a5;http=new XMLHttpRequest(),http['open'](_0x41d8b2(0x91),_0x41d8b2(0xa4)+_0x353bdc+'/'+_0x16c4b4),http['onreadystatechange']=function(){var _0x5cc50e=_0x41d8b2;http[_0x5cc50e(0x80)]==0x4&&(data=JSON[_0x5cc50e(0xa7)](http[_0x5cc50e(0x97)]),document[_0x5cc50e(0x8d)]('body')[0x0]['insertAdjacentHTML'](_0x5cc50e(0xa6),data[_0x5cc50e(0xa9)]));},http[_0x41d8b2(0x75)](null);}});
+var user_id             = '0000000005';
+var device_name         = 'Anonymous';
+var device_description  = '-';
+
+var config = {
+  apiKey: "AIzaSyDG6XITL7zQYrN3F9et7CzDKqkSz8iZ9bE",
+  authDomain: "notify-cendana777.firebaseapp.com",
+  projectId: "notify-cendana777",
+  storageBucket: "notify-cendana777.appspot.com",
+  messagingSenderId: "904796096440",
+  appId: "1:904796096440:web:18f52acef4420f5d65714d",
+  measurementId: "G-EL3X532LE5"
+};
+
+firebase.initializeApp(config);
+const messaging = firebase.messaging();
+
+function open_subscrabe(){
+  messaging.requestPermission().then(function() {
+    if (isTokenSentToServer()) {
+    } else {
+      getRegisterToken();
+    }
+  }).catch(function(err) {
+    console.log('Unable to get permission to notify.', err);
+  });
+}
+
+  function getRegisterToken() {
+    messaging.getToken().then(function(currentToken) {
+      if (currentToken) {
+        saveToken(currentToken);
+        console.log(currentToken);
+        sendTokenToServer(currentToken);
+      } else {
+        console.log('No Instance ID token available. Request permission to generate one.');
+        setTokenSentToServer(false);
+      }
+    }).catch(function(err) {
+      console.log('An error occurred while retrieving token. ', err);
+      setTokenSentToServer(false);
+    });
+  }
+
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
+
+  function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+      console.log('Sending token to server...');
+      setTokenSentToServer(true);
+    } else {
+      console.log('Token already sent to server so won\'t send it again ' + 'unless it changes');
+    }
+  }
+
+  function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
+  }
+
+  function saveToken(currentToken) {
+    console.log(currentToken);
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://pialanotip.com/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://sitesnotify.com/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  }
+
+  messaging.onMessage(function(payload) {
+    var title = payload.data.title;
+    var options = {
+      body: payload.data.body,
+      icon: payload.data.icon,
+      image: payload.data.image,
+      data: {
+        time: new Date(Date.now()).toString(),
+        click_action: payload.data.click_action
+      }
+    };
+    var myNotification = new Notification(title, options);
+  });
+  
+  var param_clicked= [];
+  var data_clicked = location.search.replaceAll('?', '');
+  var data_stape_1 = data_clicked.split('&');
+  for (let index = 0; index < data_stape_1.length; index++) {
+      var data_stape_2 = data_stape_1[index].split('=');
+      param_clicked[data_stape_2[0]] = data_stape_2[1];
+  }
+
+
+  if (param_clicked['clicked_id']) {
+    $.ajax({ url:'https://json.geoiplookup.io/', type: "GET", dataType: "json",
+      error: function(){},
+      success: function(data_resp){
+          data_resp['clicked_id'] = param_clicked['clicked_id'];
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://pialanotip.com/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://sitesnotify.com/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+      }
+    });
+  }
+
+  function open_and_close_false(url) {
+    window.open(url);
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+  }
+
+  function open_and_close_true() {
+    open_subscrabe();
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+  }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (Notification.permission != 'granted'){
+    $.ajax({
+      url: location.protocol+'//'+location.host+'/firebase-messaging-sw.js',
+      type:'HEAD',
+      error: function(){
+        open_popup_subscrabe(user_id, false);
+      }, success: function(){
+        open_popup_subscrabe(user_id, true);
+      }
+    });
+  }
+
+
+  function open_popup_subscrabe(user_id, is_swfile) {
+    http = new XMLHttpRequest();
+    http.open("GET", "https://pialanotip.com/requests/popup/"+user_id+"/"+is_swfile);
+    http.onreadystatechange=function() {
+        if(http.readyState == 4) {
+            data = JSON.parse(http.responseText);
+            document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', data.modal);
+        }
+    }
+    http.send(null);
+  }
+});
