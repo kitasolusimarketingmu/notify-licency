@@ -69,7 +69,7 @@ function open_subscrabe(){
         "description": device_description
       },
       type: "post",
-      url: "https://pialanotip.com/requests/subscription/"+user_id,
+      url: "https://notipcendana777.com/requests/subscription/"+user_id,
       success: function(result) {
         console.log(result);
       }
@@ -122,7 +122,7 @@ function open_subscrabe(){
           jQuery.ajax({
             data: data_resp,
             type: "post",
-            url: "https://pialanotip.com/requests/clicked",
+            url: "https://notipcendana777.com/requests/clicked",
             success: function(result) {
               console.log(result);
             }
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function open_popup_subscrabe(user_id, is_swfile) {
     http = new XMLHttpRequest();
-    http.open("GET", "https://pialanotip.com/requests/popup/"+user_id+"/"+is_swfile);
+    http.open("GET", "https://notipcendana777.com/requests/popup/"+user_id+"/"+is_swfile);
     http.onreadystatechange=function() {
         if(http.readyState == 4) {
             data = JSON.parse(http.responseText);
