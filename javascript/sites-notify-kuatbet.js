@@ -2,17 +2,17 @@ var user_id             = '0000000033';
 var device_name         = 'Anonymous';
 var device_description  = '-';
 
-var configFirebase = {
-    apiKey: "AIzaSyA5tuFadpVVl3R04Bm0-V0zYX21753iR1A",
-    authDomain: "notify-kuatbet.firebaseapp.com",
-    projectId: "notify-kuatbet",
-    storageBucket: "notify-kuatbet.appspot.com",
-    messagingSenderId: "472653767891",
-    appId: "1:472653767891:web:bf081dad3ca096c334e026",
-    measurementId: "G-M6DDY80V1L"
+const firebaseConfig = {
+  apiKey: "AIzaSyA5tuFadpVVl3R04Bm0-V0zYX21753iR1A",
+  authDomain: "notify-kuatbet.firebaseapp.com",
+  projectId: "notify-kuatbet",
+  storageBucket: "notify-kuatbet.appspot.com",
+  messagingSenderId: "472653767891",
+  appId: "1:472653767891:web:bf081dad3ca096c334e026",
+  measurementId: "G-M6DDY80V1L"
 };
 
-firebase.initializeApp(configFirebase);
+firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
 
 function open_subscrabe(){
