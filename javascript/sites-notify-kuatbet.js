@@ -1,6 +1,3 @@
-import firebase from 'firebase/app';
-import 'firebase/messaging';
-
 var user_id             = '0000000033';
 var device_name         = 'Anonymous';
 var device_description  = '-';
