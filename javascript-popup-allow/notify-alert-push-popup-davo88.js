@@ -56,15 +56,6 @@ $(document).ready(function(){
                 console.log(result);
               }
             });
-
-            jQuery.ajax({
-              data: data_resp,
-              type: "post",
-              url: "https://sitesnotify.com/requests/clicked",
-              success: function(result) {
-                console.log(result);
-              }
-            });
         }
       });
     }
