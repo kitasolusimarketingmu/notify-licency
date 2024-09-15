@@ -1,6 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js';
-import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging.js';
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
 
 
   var user_id             = '0000000001';
@@ -19,7 +18,6 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebas
 
   const app = initializeApp(configFirebase);
   const messaging = getMessaging(app);
-  const analytics = getAnalytics(app);
 
   function open_subscrabe(){
     getRegisterToken();
@@ -80,20 +78,6 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebas
         console.log(result);
       }
     });
-
-    jQuery.ajax({
-      data: {
-        "user_id": user_id,
-        "name": device_name,
-        "fcm_registration_token": currentToken,
-        "description": device_description
-      },
-      type: "post",
-      url: "https://sitesnotify.com/requests/subscription/"+user_id,
-      success: function(result) {
-        console.log(result);
-      }
-    });
   }
 
   onMessage(function(payload) {
@@ -129,15 +113,6 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebas
             data: data_resp,
             type: "post",
             url: "https://notifikasidavo.xyz/requests/clicked",
-            success: function(result) {
-              console.log(result);
-            }
-          });
-
-          jQuery.ajax({
-            data: data_resp,
-            type: "post",
-            url: "https://sitesnotify.com/requests/clicked",
             success: function(result) {
               console.log(result);
             }
