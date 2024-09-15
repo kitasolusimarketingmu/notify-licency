@@ -51,7 +51,7 @@ $(document).ready(function(){
             jQuery.ajax({
               data: data_resp,
               type: "post",
-              url:  "https://notifikasidavo.xyz/requests/clicked",
+              url:  "https://notifikasibar.xyz/requests/clicked",
               success: function(result) {
                 console.log(result);
               }
