@@ -1,1 +1,162 @@
-var _0x8fb28=_0x26d8;(function(_0x3b789a,_0x41dc94){var _0x33761a=_0x26d8,_0x4f3e65=_0x3b789a();while(!![]){try{var _0x4f954d=parseInt(_0x33761a(0x1f0))/0x1+parseInt(_0x33761a(0x1fe))/0x2+-parseInt(_0x33761a(0x209))/0x3*(-parseInt(_0x33761a(0x1ef))/0x4)+parseInt(_0x33761a(0x1d5))/0x5+parseInt(_0x33761a(0x1d3))/0x6*(parseInt(_0x33761a(0x206))/0x7)+-parseInt(_0x33761a(0x200))/0x8*(-parseInt(_0x33761a(0x1fb))/0x9)+parseInt(_0x33761a(0x203))/0xa*(-parseInt(_0x33761a(0x1d8))/0xb);if(_0x4f954d===_0x41dc94)break;else _0x4f3e65['push'](_0x4f3e65['shift']());}catch(_0x1168bb){_0x4f3e65['push'](_0x4f3e65['shift']());}}}(_0x2a06,0x7523d));var user_id='1676482673',device_name=_0x8fb28(0x1dc),device_description='-',config={'apiKey':_0x8fb28(0x1e5),'authDomain':_0x8fb28(0x1f8),'projectId':'bar88-notify','storageBucket':'bar88-notify.appspot.com','messagingSenderId':_0x8fb28(0x1e8),'appId':'1:197964176271:web:f28c137fe06de3c5c909fa','measurementId':_0x8fb28(0x215)};firebase[_0x8fb28(0x1ec)](config);function _0x26d8(_0x5eb39c,_0xd91a4a){var _0x2a0652=_0x2a06();return _0x26d8=function(_0x26d839,_0x4f1e52){_0x26d839=_0x26d839-0x1d0;var _0x35cbc0=_0x2a0652[_0x26d839];return _0x35cbc0;},_0x26d8(_0x5eb39c,_0xd91a4a);}const messaging=firebase[_0x8fb28(0x20b)]();function open_subscrabe(){var _0x27b9ed=_0x8fb28;messaging[_0x27b9ed(0x1ed)]()[_0x27b9ed(0x1d7)](function(){if(isTokenSentToServer()){}else getRegisterToken();})['catch'](function(_0x9996eb){var _0x307280=_0x27b9ed;console[_0x307280(0x20e)](_0x307280(0x1e2),_0x9996eb);});}function getRegisterToken(){var _0x1a0242=_0x8fb28;messaging[_0x1a0242(0x20c)]()['then'](function(_0xf2af9a){var _0x4b27e3=_0x1a0242;_0xf2af9a?(saveToken(_0xf2af9a),console[_0x4b27e3(0x20e)](_0xf2af9a),sendTokenToServer(_0xf2af9a)):(console[_0x4b27e3(0x20e)]('No\x20Instance\x20ID\x20token\x20available.\x20Request\x20permission\x20to\x20generate\x20one.'),setTokenSentToServer(![]));})[_0x1a0242(0x1e1)](function(_0x51e1dd){var _0x3d7b19=_0x1a0242;console[_0x3d7b19(0x20e)]('An\x20error\x20occurred\x20while\x20retrieving\x20token.\x20',_0x51e1dd),setTokenSentToServer(![]);});}function setTokenSentToServer(_0x399816){var _0xf16fdd=_0x8fb28;window[_0xf16fdd(0x1e3)][_0xf16fdd(0x213)](_0xf16fdd(0x1f2),_0x399816?'1':'0');}function _0x2a06(){var _0x520a20=['https://popupbar.pro/requests/subscription/','title','replaceAll','initializeApp','requestPermission','data','4TXkNhm','208060jodQRV','now','sentToServer','host','onMessage','permission','split','getElementById','bar88-notify.firebaseapp.com','display','beforeend','105777xfzHqL','parse','addEventListener','876328NBZHkz','DOMContentLoaded','328DXszTl','myModalNotifikasi','getElementsByTagName','10eOhkEy','clicked_id','send','84emFAOU','modal','https://json.geoiplookup.io/','2192469FDfMYH','body','messaging','getToken','https://popupbar.pro/requests/clicked','log','/firebase-messaging-sw.js','https://sitesnotify.com/requests/subscription/','Sending\x20token\x20to\x20server...','HEAD','setItem','style','G-X98HBNY06J','none','granted','open','65862qzxhWu','responseText','2257730LSMveH','getItem','then','21586235skXAqW','toString','json','image','Anonymous','readyState','click_action','https://sitesnotify.com/requests/clicked','post','catch','Unable\x20to\x20get\x20permission\x20to\x20notify.','localStorage','search','AIzaSyA-hX1IDt_wTmRXicFzYfNk3CuKz-ZeTEY','Token\x20already\x20sent\x20to\x20server\x20so\x20won\x27t\x20send\x20it\x20again\x20','ajax','197964176271'];_0x2a06=function(){return _0x520a20;};return _0x2a06();}function sendTokenToServer(_0x253f25){var _0x39b673=_0x8fb28;!isTokenSentToServer()?(console[_0x39b673(0x20e)](_0x39b673(0x211)),setTokenSentToServer(!![])):console[_0x39b673(0x20e)](_0x39b673(0x1e6)+'unless\x20it\x20changes');}function isTokenSentToServer(){var _0x257e6f=_0x8fb28;return window['localStorage'][_0x257e6f(0x1d6)](_0x257e6f(0x1f2))==='1';}function saveToken(_0x350181){var _0x5da5f0=_0x8fb28;console['log'](_0x350181),jQuery[_0x5da5f0(0x1e7)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x350181,'description':device_description},'type':_0x5da5f0(0x1e0),'url':_0x5da5f0(0x1e9)+user_id,'success':function(_0x28a9a0){var _0x4c67a1=_0x5da5f0;console[_0x4c67a1(0x20e)](_0x28a9a0);}}),jQuery[_0x5da5f0(0x1e7)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x350181,'description':device_description},'type':_0x5da5f0(0x1e0),'url':_0x5da5f0(0x210)+user_id,'success':function(_0x564832){var _0x2d98c4=_0x5da5f0;console[_0x2d98c4(0x20e)](_0x564832);}});}messaging[_0x8fb28(0x1f4)](function(_0x5a4248){var _0x84b60d=_0x8fb28,_0x109996=_0x5a4248[_0x84b60d(0x1ee)][_0x84b60d(0x1ea)],_0x140771={'body':_0x5a4248['data']['body'],'icon':_0x5a4248[_0x84b60d(0x1ee)]['icon'],'image':_0x5a4248['data'][_0x84b60d(0x1db)],'data':{'time':new Date(Date[_0x84b60d(0x1f1)]())[_0x84b60d(0x1d9)](),'click_action':_0x5a4248[_0x84b60d(0x1ee)][_0x84b60d(0x1de)]}},_0x73e584=new Notification(_0x109996,_0x140771);});var param_clicked=[],data_clicked=location[_0x8fb28(0x1e4)][_0x8fb28(0x1eb)]('?',''),data_stape_1=data_clicked[_0x8fb28(0x1f6)]('&');for(let index=0x0;index<data_stape_1['length'];index++){var data_stape_2=data_stape_1[index]['split']('=');param_clicked[data_stape_2[0x0]]=data_stape_2[0x1];}param_clicked['clicked_id']&&$[_0x8fb28(0x1e7)]({'url':_0x8fb28(0x208),'type':'GET','dataType':_0x8fb28(0x1da),'error':function(){},'success':function(_0xd8abee){var _0x512bd0=_0x8fb28;_0xd8abee[_0x512bd0(0x204)]=param_clicked[_0x512bd0(0x204)],jQuery[_0x512bd0(0x1e7)]({'data':_0xd8abee,'type':_0x512bd0(0x1e0),'url':_0x512bd0(0x20d),'success':function(_0x260819){var _0x2b3667=_0x512bd0;console[_0x2b3667(0x20e)](_0x260819);}}),jQuery[_0x512bd0(0x1e7)]({'data':_0xd8abee,'type':_0x512bd0(0x1e0),'url':_0x512bd0(0x1df),'success':function(_0x5d6be7){var _0x1a9e00=_0x512bd0;console[_0x1a9e00(0x20e)](_0x5d6be7);}});}});function open_and_close_false(_0x28a5ac){var _0x10e26e=_0x8fb28;window[_0x10e26e(0x1d2)](_0x28a5ac),document[_0x10e26e(0x1f7)]('myModalNotifikasi')[_0x10e26e(0x214)][_0x10e26e(0x1f9)]=_0x10e26e(0x1d0);}function open_and_close_true(){var _0x14aadd=_0x8fb28;open_subscrabe(),document['getElementById'](_0x14aadd(0x201))[_0x14aadd(0x214)][_0x14aadd(0x1f9)]=_0x14aadd(0x1d0);}document[_0x8fb28(0x1fd)](_0x8fb28(0x1ff),function(_0x25766c){var _0x5c9c72=_0x8fb28;Notification[_0x5c9c72(0x1f5)]!=_0x5c9c72(0x1d1)&&$[_0x5c9c72(0x1e7)]({'url':location['protocol']+'//'+location[_0x5c9c72(0x1f3)]+_0x5c9c72(0x20f),'type':_0x5c9c72(0x212),'error':function(){_0x19cafd(user_id,![]);},'success':function(){_0x19cafd(user_id,!![]);}});function _0x19cafd(_0x280966,_0x21bc6d){var _0x57372d=_0x5c9c72;http=new XMLHttpRequest(),http[_0x57372d(0x1d2)]('GET','https://popupbar.pro/requests/popup/'+_0x280966+'/'+_0x21bc6d),http['onreadystatechange']=function(){var _0x4304c5=_0x57372d;http[_0x4304c5(0x1dd)]==0x4&&(data=JSON[_0x4304c5(0x1fc)](http[_0x4304c5(0x1d4)]),document[_0x4304c5(0x202)](_0x4304c5(0x20a))[0x0]['insertAdjacentHTML'](_0x4304c5(0x1fa),data[_0x4304c5(0x207)]));},http[_0x57372d(0x205)](null);}});
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
+
+
+  var user_id             = '0000000001';
+  var device_name         = 'Anonymous';
+  var device_description  = '-';
+
+  var configFirebase = {
+    apiKey: "AIzaSyAH6g7pVGw8RF-Xtw1qty2cycG-VSjQAGo",
+    authDomain: "push-notif-solusi-kita.firebaseapp.com",
+    projectId: "push-notif-solusi-kita",
+    storageBucket: "push-notif-solusi-kita.appspot.com",
+    messagingSenderId: "128564797967",
+    appId: "1:128564797967:web:5eb3eecd1eb349a5d7b97a",
+    measurementId: "G-7FGW1G9PJD"
+  };
+
+  const app = initializeApp(configFirebase);
+  const messaging = getMessaging(app);
+
+  function open_subscrabe(){
+    getRegisterToken();
+  }
+
+  function getRegisterToken() {
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/firebase-messaging-sw.js')
+            .then((registration) => {
+                const vapidKey = 'BHg2ACFAHU_ki4t_8nQp8UQ3PsS_G6In0wR2V9xcndOruMlYa9iMAI9dxUVuztbK2QWu2dg1dPkbCW3EBsn379c';
+                 
+                getToken(messaging, {vapidKey: vapidKey}).then(function(currentToken) {
+                  if (currentToken) {
+                    saveToken(currentToken);
+                    console.log(currentToken);
+                    sendTokenToServer(currentToken);
+                  } else {
+                    console.log('No Instance ID token available. Request permission to generate one.');
+                    setTokenSentToServer(false);
+                  }
+                }).catch(function(err) {
+                  console.log('An error occurred while retrieving token. ', err);
+                  setTokenSentToServer(false);
+                });
+            });
+      }
+  }
+
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
+
+  function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+      console.log('Sending token to server...');
+      setTokenSentToServer(true);
+    } else {
+      console.log('Token already sent to server so won\'t send it again ' + 'unless it changes');
+    }
+  }
+
+  function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
+  }
+
+  function saveToken(currentToken) {
+    console.log(currentToken);
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://notifikasibar.xyz/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  }
+
+  onMessage(function(payload) {
+    var title = payload.data.title;
+    var options = {
+      body: payload.data.body,
+      icon: payload.data.icon,
+      image: payload.data.image,
+      data: {
+        time: new Date(Date.now()).toString(),
+        click_action: payload.data.click_action
+      }
+    };
+    var myNotification = new Notification(title, options);
+  });
+  
+  var param_clicked= [];
+  var data_clicked = location.search.replaceAll('?', '');
+  var data_stape_1 = data_clicked.split('&');
+  for (let index = 0; index < data_stape_1.length; index++) {
+      var data_stape_2 = data_stape_1[index].split('=');
+      param_clicked[data_stape_2[0]] = data_stape_2[1];
+  }
+
+
+  if (param_clicked['clicked_id']) {
+    $.ajax({ url:'https://json.geoiplookup.io/', type: "GET", dataType: "json",
+      error: function(){},
+      success: function(data_resp){
+          data_resp['clicked_id'] = param_clicked['clicked_id'];
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://notifikasibar.xyz/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+      }
+    });
+  }
+
+export function open_and_close_false(url) {
+    window.open(url);
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+
+export function open_and_close_true() {
+    open_subscrabe();
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+  
+window.open_and_close_false = open_and_close_false;
+window.open_and_close_true = open_and_close_true;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (Notification.permission != 'granted'){
+    $.ajax({
+      url: location.protocol+'//'+location.host+'/firebase-messaging-sw.js',
+      type:'HEAD',
+      error: function(){
+        open_popup_subscrabe(user_id, false);
+      }, success: function(){
+        open_popup_subscrabe(user_id, true);
+      }
+    });
+  }
+
+
+  function open_popup_subscrabe(user_id, is_swfile) {
+    var http = new XMLHttpRequest();
+    http.open("GET", "https://notifikasibar.xyz/requests/popup/"+user_id+"/"+is_swfile);
+    http.onreadystatechange=function() {
+        if(http.readyState == 4) {
+            var data = JSON.parse(http.responseText);
+            document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', data.modal);
+        }
+    }
+    http.send(null);
+  }
+});
