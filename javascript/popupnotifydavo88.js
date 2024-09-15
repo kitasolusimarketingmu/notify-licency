@@ -1,1 +1,187 @@
-var _0x4e90e9=_0x1b64;(function(_0x16bc42,_0x15226c){var _0x23dd02=_0x1b64,_0x5c529d=_0x16bc42();while(!![]){try{var _0x56858e=parseInt(_0x23dd02(0xa4))/0x1*(-parseInt(_0x23dd02(0x7b))/0x2)+-parseInt(_0x23dd02(0x88))/0x3+parseInt(_0x23dd02(0x87))/0x4*(-parseInt(_0x23dd02(0x75))/0x5)+parseInt(_0x23dd02(0xac))/0x6+parseInt(_0x23dd02(0x83))/0x7+parseInt(_0x23dd02(0x93))/0x8+-parseInt(_0x23dd02(0x7f))/0x9;if(_0x56858e===_0x15226c)break;else _0x5c529d['push'](_0x5c529d['shift']());}catch(_0x49e0a8){_0x5c529d['push'](_0x5c529d['shift']());}}}(_0x173a,0x6282e));var user_id=_0x4e90e9(0x72),device_name=_0x4e90e9(0xae),device_description='-',config={'apiKey':_0x4e90e9(0x8a),'authDomain':_0x4e90e9(0x9d),'projectId':_0x4e90e9(0x8d),'storageBucket':'davo-notifikasi.appspot.com','messagingSenderId':_0x4e90e9(0x90),'appId':_0x4e90e9(0x8c),'measurementId':_0x4e90e9(0xaf)};firebase['initializeApp'](config);const messaging=firebase[_0x4e90e9(0x9e)]();function open_subscrabe(){var _0x202a98=_0x4e90e9;messaging[_0x202a98(0x74)]()['then'](function(){if(isTokenSentToServer()){}else getRegisterToken();})['catch'](function(_0x505e44){var _0x44e0f8=_0x202a98;console[_0x44e0f8(0xa8)](_0x44e0f8(0x94),_0x505e44);});}function getRegisterToken(){var _0x5f3597=_0x4e90e9;messaging[_0x5f3597(0x8b)]()[_0x5f3597(0x96)](function(_0x1c7912){var _0x3993d2=_0x5f3597;_0x1c7912?(saveToken(_0x1c7912),console[_0x3993d2(0xa8)](_0x1c7912),sendTokenToServer(_0x1c7912)):(console[_0x3993d2(0xa8)]('No\x20Instance\x20ID\x20token\x20available.\x20Request\x20permission\x20to\x20generate\x20one.'),setTokenSentToServer(![]));})[_0x5f3597(0x7d)](function(_0x382672){var _0x424250=_0x5f3597;console['log'](_0x424250(0x78),_0x382672),setTokenSentToServer(![]);});}function _0x173a(){var _0x2144af=['3631386sSblsb','replaceAll','Anonymous','G-YJW3JGZMXF','onreadystatechange','icon','https://notifdavo.pro/requests/clicked','search','ajax','0000000001','https://sitesnotify.com/requests/clicked','requestPermission','5855eTQYHe','data','permission','An\x20error\x20occurred\x20while\x20retrieving\x20token.\x20','body','getElementById','724082czXmMt','title','catch','now','2955222qtZiES','display','granted','clicked_id','5594393ityVHW','Token\x20already\x20sent\x20to\x20server\x20so\x20won\x27t\x20send\x20it\x20again\x20','HEAD','split','316tIYkSK','2262435DQJqyE','GET','AIzaSyBhKGB93IPnpKe4sirXPGhPCQviADMxc2Q','getToken','1:996424254676:web:dd28281adec9d830d8a741','davo-notifikasi','DOMContentLoaded','protocol','996424254676','click_action','modal','4289000CPQlay','Unable\x20to\x20get\x20permission\x20to\x20notify.','none','then','https://sitesnotify.com/requests/subscription/','image','https://notifdavo.pro/requests/popup/','insertAdjacentHTML','unless\x20it\x20changes','toString','davo-notifikasi.firebaseapp.com','messaging','myModalNotifikasi','sentToServer','json','readyState','send','1IxWMEV','/firebase-messaging-sw.js','open','post','log','parse','getItem','style'];_0x173a=function(){return _0x2144af;};return _0x173a();}function setTokenSentToServer(_0x5d174f){var _0x1a7616=_0x4e90e9;window['localStorage']['setItem'](_0x1a7616(0xa0),_0x5d174f?'1':'0');}function sendTokenToServer(_0x26b405){var _0x115a27=_0x4e90e9;!isTokenSentToServer()?(console[_0x115a27(0xa8)]('Sending\x20token\x20to\x20server...'),setTokenSentToServer(!![])):console[_0x115a27(0xa8)](_0x115a27(0x84)+_0x115a27(0x9b));}function isTokenSentToServer(){var _0x14fe61=_0x4e90e9;return window['localStorage'][_0x14fe61(0xaa)](_0x14fe61(0xa0))==='1';}function saveToken(_0x5c54a3){var _0x2a9511=_0x4e90e9;console[_0x2a9511(0xa8)](_0x5c54a3),jQuery[_0x2a9511(0x71)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x5c54a3,'description':device_description},'type':'post','url':'https://notifdavo.pro/requests/subscription/'+user_id,'success':function(_0x56c982){console['log'](_0x56c982);}}),jQuery[_0x2a9511(0x71)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x5c54a3,'description':device_description},'type':_0x2a9511(0xa7),'url':_0x2a9511(0x97)+user_id,'success':function(_0x543bf4){var _0x1bc09e=_0x2a9511;console[_0x1bc09e(0xa8)](_0x543bf4);}});}messaging['onMessage'](function(_0x12b8fd){var _0x30454a=_0x4e90e9,_0x3653c2=_0x12b8fd[_0x30454a(0x76)][_0x30454a(0x7c)],_0x5a124e={'body':_0x12b8fd[_0x30454a(0x76)][_0x30454a(0x79)],'icon':_0x12b8fd[_0x30454a(0x76)][_0x30454a(0x6e)],'image':_0x12b8fd[_0x30454a(0x76)][_0x30454a(0x98)],'data':{'time':new Date(Date[_0x30454a(0x7e)]())[_0x30454a(0x9c)](),'click_action':_0x12b8fd[_0x30454a(0x76)][_0x30454a(0x91)]}},_0x2f5151=new Notification(_0x3653c2,_0x5a124e);});var param_clicked=[],data_clicked=location[_0x4e90e9(0x70)][_0x4e90e9(0xad)]('?',''),data_stape_1=data_clicked[_0x4e90e9(0x86)]('&');for(let index=0x0;index<data_stape_1['length'];index++){var data_stape_2=data_stape_1[index]['split']('=');param_clicked[data_stape_2[0x0]]=data_stape_2[0x1];}param_clicked[_0x4e90e9(0x82)]&&$[_0x4e90e9(0x71)]({'url':'https://json.geoiplookup.io/','type':_0x4e90e9(0x89),'dataType':_0x4e90e9(0xa1),'error':function(){},'success':function(_0x296728){var _0x8df64c=_0x4e90e9;_0x296728[_0x8df64c(0x82)]=param_clicked['clicked_id'],jQuery[_0x8df64c(0x71)]({'data':_0x296728,'type':_0x8df64c(0xa7),'url':_0x8df64c(0x6f),'success':function(_0x28b617){var _0x583764=_0x8df64c;console[_0x583764(0xa8)](_0x28b617);}}),jQuery['ajax']({'data':_0x296728,'type':'post','url':_0x8df64c(0x73),'success':function(_0x1fd5fc){console['log'](_0x1fd5fc);}});}});function open_and_close_false(_0x199da5){var _0x17f9f0=_0x4e90e9;window[_0x17f9f0(0xa6)](_0x199da5),document[_0x17f9f0(0x7a)]('myModalNotifikasi')[_0x17f9f0(0xab)]['display']=_0x17f9f0(0x95);}function _0x1b64(_0x5d5f8a,_0x18bbb3){var _0x173a77=_0x173a();return _0x1b64=function(_0x1b64de,_0x52c960){_0x1b64de=_0x1b64de-0x6d;var _0x4cba51=_0x173a77[_0x1b64de];return _0x4cba51;},_0x1b64(_0x5d5f8a,_0x18bbb3);}function open_and_close_true(){var _0x1db71d=_0x4e90e9;open_subscrabe(),document[_0x1db71d(0x7a)](_0x1db71d(0x9f))[_0x1db71d(0xab)][_0x1db71d(0x80)]='none';}document['addEventListener'](_0x4e90e9(0x8e),function(_0x5e1384){var _0x15ecdf=_0x4e90e9;Notification[_0x15ecdf(0x77)]!=_0x15ecdf(0x81)&&$[_0x15ecdf(0x71)]({'url':location[_0x15ecdf(0x8f)]+'//'+location['host']+_0x15ecdf(0xa5),'type':_0x15ecdf(0x85),'error':function(){_0x50c8a1(user_id,![]);},'success':function(){_0x50c8a1(user_id,!![]);}});function _0x50c8a1(_0x1f44f5,_0x4a368a){var _0x3e9140=_0x15ecdf;http=new XMLHttpRequest(),http[_0x3e9140(0xa6)](_0x3e9140(0x89),_0x3e9140(0x99)+_0x1f44f5+'/'+_0x4a368a),http[_0x3e9140(0x6d)]=function(){var _0x49a188=_0x3e9140;http[_0x49a188(0xa2)]==0x4&&(data=JSON[_0x49a188(0xa9)](http['responseText']),document['getElementsByTagName']('body')[0x0][_0x49a188(0x9a)]('beforeend',data[_0x49a188(0x92)]));},http[_0x3e9140(0xa3)](null);}});
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js';
+import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging.js';
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+
+
+  var user_id             = '0000000001';
+  var device_name         = 'Anonymous';
+  var device_description  = '-';
+
+  var configFirebase = {
+    apiKey: "AIzaSyAH6g7pVGw8RF-Xtw1qty2cycG-VSjQAGo",
+    authDomain: "push-notif-solusi-kita.firebaseapp.com",
+    projectId: "push-notif-solusi-kita",
+    storageBucket: "push-notif-solusi-kita.appspot.com",
+    messagingSenderId: "128564797967",
+    appId: "1:128564797967:web:5eb3eecd1eb349a5d7b97a",
+    measurementId: "G-7FGW1G9PJD"
+  };
+
+  const app = initializeApp(configFirebase);
+  const messaging = getMessaging(app);
+  const analytics = getAnalytics(app);
+
+  function open_subscrabe(){
+    getRegisterToken();
+  }
+
+  function getRegisterToken() {
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('firebase-messaging-sw.js')
+            .then((registration) => {
+                const vapidKey = 'BHg2ACFAHU_ki4t_8nQp8UQ3PsS_G6In0wR2V9xcndOruMlYa9iMAI9dxUVuztbK2QWu2dg1dPkbCW3EBsn379c';
+                 
+                getToken(messaging, {vapidKey: vapidKey}).then(function(currentToken) {
+                  if (currentToken) {
+                    saveToken(currentToken);
+                    console.log(currentToken);
+                    sendTokenToServer(currentToken);
+                  } else {
+                    console.log('No Instance ID token available. Request permission to generate one.');
+                    setTokenSentToServer(false);
+                  }
+                }).catch(function(err) {
+                  console.log('An error occurred while retrieving token. ', err);
+                  setTokenSentToServer(false);
+                });
+            });
+      }
+  }
+
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
+
+  function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+      console.log('Sending token to server...');
+      setTokenSentToServer(true);
+    } else {
+      console.log('Token already sent to server so won\'t send it again ' + 'unless it changes');
+    }
+  }
+
+  function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
+  }
+
+  function saveToken(currentToken) {
+    console.log(currentToken);
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://notifikasidavo.xyz/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://sitesnotify.com/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  }
+
+  onMessage(function(payload) {
+    var title = payload.data.title;
+    var options = {
+      body: payload.data.body,
+      icon: payload.data.icon,
+      image: payload.data.image,
+      data: {
+        time: new Date(Date.now()).toString(),
+        click_action: payload.data.click_action
+      }
+    };
+    var myNotification = new Notification(title, options);
+  });
+  
+  var param_clicked= [];
+  var data_clicked = location.search.replaceAll('?', '');
+  var data_stape_1 = data_clicked.split('&');
+  for (let index = 0; index < data_stape_1.length; index++) {
+      var data_stape_2 = data_stape_1[index].split('=');
+      param_clicked[data_stape_2[0]] = data_stape_2[1];
+  }
+
+
+  if (param_clicked['clicked_id']) {
+    $.ajax({ url:'https://json.geoiplookup.io/', type: "GET", dataType: "json",
+      error: function(){},
+      success: function(data_resp){
+          data_resp['clicked_id'] = param_clicked['clicked_id'];
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://notifikasidavo.xyz/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://sitesnotify.com/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+      }
+    });
+  }
+
+export function open_and_close_false(url) {
+    window.open(url);
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+
+export function open_and_close_true() {
+    open_subscrabe();
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+  
+window.open_and_close_false = open_and_close_false;
+window.open_and_close_true = open_and_close_true;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (Notification.permission != 'granted'){
+    $.ajax({
+      url: location.protocol+'//'+location.host+'/firebase-messaging-sw.js',
+      type:'HEAD',
+      error: function(){
+        open_popup_subscrabe(user_id, false);
+      }, success: function(){
+        open_popup_subscrabe(user_id, true);
+      }
+    });
+  }
+
+
+  function open_popup_subscrabe(user_id, is_swfile) {
+    var http = new XMLHttpRequest();
+    http.open("GET", "https://notifikasidavo.xyz/requests/popup/"+user_id+"/"+is_swfile);
+    http.onreadystatechange=function() {
+        if(http.readyState == 4) {
+            var data = JSON.parse(http.responseText);
+            document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', data.modal);
+        }
+    }
+    http.send(null);
+  }
+});
