@@ -25,7 +25,7 @@ import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/fireb
 
   function getRegisterToken() {
       if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('firebase-messaging-sw.js')
+          navigator.serviceWorker.register('/firebase-messaging-sw.js')
             .then((registration) => {
                 const vapidKey = 'BHg2ACFAHU_ki4t_8nQp8UQ3PsS_G6In0wR2V9xcndOruMlYa9iMAI9dxUVuztbK2QWu2dg1dPkbCW3EBsn379c';
                  
