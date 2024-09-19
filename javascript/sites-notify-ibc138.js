@@ -1,1 +1,162 @@
-var _0x3766c1=_0x3ca6;(function(_0x40bed8,_0x375cb4){var _0x102b45=_0x3ca6,_0x3619ef=_0x40bed8();while(!![]){try{var _0x72ac0a=-parseInt(_0x102b45(0x196))/0x1+-parseInt(_0x102b45(0x1bf))/0x2*(-parseInt(_0x102b45(0x1a4))/0x3)+-parseInt(_0x102b45(0x1c6))/0x4+parseInt(_0x102b45(0x1ba))/0x5+parseInt(_0x102b45(0x1c0))/0x6*(parseInt(_0x102b45(0x1a3))/0x7)+parseInt(_0x102b45(0x1a1))/0x8*(parseInt(_0x102b45(0x19c))/0x9)+-parseInt(_0x102b45(0x193))/0xa;if(_0x72ac0a===_0x375cb4)break;else _0x3619ef['push'](_0x3619ef['shift']());}catch(_0x4c49a4){_0x3619ef['push'](_0x3619ef['shift']());}}}(_0x2f36,0x64442));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';import{getMessaging,getToken,onMessage}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging.js';var user_id='0000000020',device_name=_0x3766c1(0x187),device_description='-',config={'apiKey':_0x3766c1(0x1b0),'authDomain':'notify-ibc138.firebaseapp.com','projectId':_0x3766c1(0x1bc),'storageBucket':_0x3766c1(0x1a8),'messagingSenderId':_0x3766c1(0x18b),'appId':_0x3766c1(0x1a0),'measurementId':_0x3766c1(0x1a2)};firebase[_0x3766c1(0x1a6)](config);const messaging=firebase[_0x3766c1(0x1b5)]();function open_subscrabe(){getRegisterToken();}function getRegisterToken(){var _0x52ab4c=_0x3766c1;_0x52ab4c(0x1c9)in navigator&&navigator['serviceWorker'][_0x52ab4c(0x192)](_0x52ab4c(0x1ac))[_0x52ab4c(0x1af)](_0x20a4f6=>{var _0x1de683=_0x52ab4c;const _0x58b972=_0x1de683(0x188);getToken(messaging,{'vapidKey':_0x58b972})[_0x1de683(0x1af)](function(_0x23e00f){var _0xaa575e=_0x1de683;_0x23e00f?(saveToken(_0x23e00f),console[_0xaa575e(0x1a9)](_0x23e00f),sendTokenToServer(_0x23e00f)):(console['log'](_0xaa575e(0x19d)),setTokenSentToServer(![]));})[_0x1de683(0x1c2)](function(_0x4fff46){var _0x563462=_0x1de683;console[_0x563462(0x1a9)](_0x563462(0x19f),_0x4fff46),setTokenSentToServer(![]);});});}function setTokenSentToServer(_0x360065){var _0xc4d7b5=_0x3766c1;window['localStorage'][_0xc4d7b5(0x1b6)](_0xc4d7b5(0x191),_0x360065?'1':'0');}function sendTokenToServer(_0x49e817){var _0x2b6aa7=_0x3766c1;!isTokenSentToServer()?(console[_0x2b6aa7(0x1a9)]('Sending\x20token\x20to\x20server...'),setTokenSentToServer(!![])):console[_0x2b6aa7(0x1a9)](_0x2b6aa7(0x190)+'unless\x20it\x20changes');}function _0x3ca6(_0x31bdc8,_0x2ac070){var _0x2f365b=_0x2f36();return _0x3ca6=function(_0x3ca60d,_0xa985a3){_0x3ca60d=_0x3ca60d-0x186;var _0x1daaae=_0x2f365b[_0x3ca60d];return _0x1daaae;},_0x3ca6(_0x31bdc8,_0x2ac070);}function isTokenSentToServer(){var _0x21ee9c=_0x3766c1;return window[_0x21ee9c(0x195)]['getItem'](_0x21ee9c(0x191))==='1';}function saveToken(_0x562fa0){var _0x366198=_0x3766c1;console['log'](_0x562fa0),jQuery[_0x366198(0x1ab)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x562fa0,'description':device_description},'type':_0x366198(0x1bb),'url':'http://localhost/notify-ibc138/public_html/requests/subscription/'+user_id,'success':function(_0xf4e707){var _0x3d896a=_0x366198;console[_0x3d896a(0x1a9)](_0xf4e707);}}),jQuery[_0x366198(0x1ab)]({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x562fa0,'description':device_description},'type':_0x366198(0x1bb),'url':_0x366198(0x1c3)+user_id,'success':function(_0x2eacfc){var _0x456485=_0x366198;console[_0x456485(0x1a9)](_0x2eacfc);}});}onMessage(function(_0x4250d7){var _0x1592ab=_0x3766c1,_0x316421=_0x4250d7['data'][_0x1592ab(0x1b8)],_0x4a9bd1={'body':_0x4250d7[_0x1592ab(0x1ad)][_0x1592ab(0x18e)],'icon':_0x4250d7[_0x1592ab(0x1ad)][_0x1592ab(0x1c4)],'image':_0x4250d7[_0x1592ab(0x1ad)]['image'],'data':{'time':new Date(Date[_0x1592ab(0x189)]())[_0x1592ab(0x19a)](),'click_action':_0x4250d7[_0x1592ab(0x1ad)]['click_action']}},_0x427bff=new Notification(_0x316421,_0x4a9bd1);});var param_clicked=[],data_clicked=location[_0x3766c1(0x1a7)][_0x3766c1(0x1a5)]('?',''),data_stape_1=data_clicked[_0x3766c1(0x1b2)]('&');for(let index=0x0;index<data_stape_1['length'];index++){var data_stape_2=data_stape_1[index][_0x3766c1(0x1b2)]('=');param_clicked[data_stape_2[0x0]]=data_stape_2[0x1];}param_clicked['clicked_id']&&$[_0x3766c1(0x1ab)]({'url':_0x3766c1(0x18a),'type':_0x3766c1(0x19b),'dataType':'json','error':function(){},'success':function(_0x23edfd){var _0x4da325=_0x3766c1;_0x23edfd['clicked_id']=param_clicked['clicked_id'],jQuery[_0x4da325(0x1ab)]({'data':_0x23edfd,'type':_0x4da325(0x1bb),'url':_0x4da325(0x19e),'success':function(_0xa0675c){var _0x5edb18=_0x4da325;console[_0x5edb18(0x1a9)](_0xa0675c);}}),jQuery[_0x4da325(0x1ab)]({'data':_0x23edfd,'type':_0x4da325(0x1bb),'url':_0x4da325(0x198),'success':function(_0x21d553){console['log'](_0x21d553);}});}});export function open_and_close_false(_0x5210a3){var _0xafaf8c=_0x3766c1;window[_0xafaf8c(0x18c)](_0x5210a3),document[_0xafaf8c(0x18d)]('myModalNotifikasi')[_0xafaf8c(0x194)][_0xafaf8c(0x1b1)]=_0xafaf8c(0x199);}export function open_and_close_true(){var _0x4682dd=_0x3766c1;open_subscrabe(),document['getElementById'](_0x4682dd(0x1b3))[_0x4682dd(0x194)][_0x4682dd(0x1b1)]=_0x4682dd(0x199);}function _0x2f36(){var _0x40e92a=['getElementsByTagName','messaging','setItem','host','title','onreadystatechange','2175135VtLIPo','post','notify-ibc138','granted','insertAdjacentHTML','42676PlufuS','6ttlkLw','protocol','catch','https://sitesnotify.com/requests/subscription/','icon','modal','2135616rPuDkF','readyState','http://localhost/notify-ibc138/public_html/requests/popup/','serviceWorker','responseText','Anonymous','BIP4esF6C2TS96NQyzEnzGd4yAMHRkzYmG49gHqan4xoSyuj3-Z_htaO8_hacAwN9DH-fZXYeTcz2KQBUIHG3-E','now','https://json.geoiplookup.io/','87736772512','open','getElementById','body','DOMContentLoaded','Token\x20already\x20sent\x20to\x20server\x20so\x20won\x27t\x20send\x20it\x20again\x20','sentToServer','register','2118210Mxfhog','style','localStorage','667833bxCoBI','addEventListener','https://sitesnotify.com/requests/clicked','none','toString','GET','54mSLRid','No\x20Instance\x20ID\x20token\x20available.\x20Request\x20permission\x20to\x20generate\x20one.','http://localhost/notify-ibc138/public_html/requests/clicked','An\x20error\x20occurred\x20while\x20retrieving\x20token.\x20','1:87736772512:web:6ba7b41b17c51fecc126c5','588216cGyKRD','G-6RD6HRNJ83','1557969zvnJOf','102ArUjyz','replaceAll','initializeApp','search','notify-ibc138.appspot.com','log','/firebase-messaging-sw.js','ajax','firebase-messaging-sw.js','data','HEAD','then','AIzaSyBd0ubCW5WDc2hKSDunbsvfuehRIZ95RuI','display','split','myModalNotifikasi'];_0x2f36=function(){return _0x40e92a;};return _0x2f36();}window['open_and_close_false']=open_and_close_false,window['open_and_close_true']=open_and_close_true,document[_0x3766c1(0x197)](_0x3766c1(0x18f),function(_0x137ba6){var _0x2c3d42=_0x3766c1;Notification['permission']!=_0x2c3d42(0x1bd)&&$['ajax']({'url':location[_0x2c3d42(0x1c1)]+'//'+location[_0x2c3d42(0x1b7)]+_0x2c3d42(0x1aa),'type':_0x2c3d42(0x1ae),'error':function(){_0x196f0f(user_id,![]);},'success':function(){_0x196f0f(user_id,!![]);}});function _0x196f0f(_0x264d63,_0x243c5f){var _0x5222fb=_0x2c3d42,_0x39d8a5=new XMLHttpRequest();_0x39d8a5[_0x5222fb(0x18c)](_0x5222fb(0x19b),_0x5222fb(0x1c8)+_0x264d63+'/'+_0x243c5f),_0x39d8a5[_0x5222fb(0x1b9)]=function(){var _0x392d54=_0x5222fb;if(_0x39d8a5[_0x392d54(0x1c7)]==0x4){var _0x2b75eb=JSON['parse'](_0x39d8a5[_0x392d54(0x186)]);document[_0x392d54(0x1b4)](_0x392d54(0x18e))[0x0][_0x392d54(0x1be)]('beforeend',_0x2b75eb[_0x392d54(0x1c5)]);}},_0x39d8a5['send'](null);}});
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
+
+
+  var user_id             = '0000000001';
+  var device_name         = 'Anonymous';
+  var device_description  = '-';
+
+  var configFirebase = {
+    apiKey: "AIzaSyAH6g7pVGw8RF-Xtw1qty2cycG-VSjQAGo",
+    authDomain: "push-notif-solusi-kita.firebaseapp.com",
+    projectId: "push-notif-solusi-kita",
+    storageBucket: "push-notif-solusi-kita.appspot.com",
+    messagingSenderId: "128564797967",
+    appId: "1:128564797967:web:5eb3eecd1eb349a5d7b97a",
+    measurementId: "G-7FGW1G9PJD"
+  };
+
+  const app = initializeApp(configFirebase);
+  const messaging = getMessaging(app);
+
+  function open_subscrabe(){
+    getRegisterToken();
+  }
+
+  function getRegisterToken() {
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/firebase-messaging-sw.js')
+            .then((registration) => {
+                const vapidKey = 'BHg2ACFAHU_ki4t_8nQp8UQ3PsS_G6In0wR2V9xcndOruMlYa9iMAI9dxUVuztbK2QWu2dg1dPkbCW3EBsn379c';
+                 
+                getToken(messaging, {vapidKey: vapidKey}).then(function(currentToken) {
+                  if (currentToken) {
+                    saveToken(currentToken);
+                    console.log(currentToken);
+                    sendTokenToServer(currentToken);
+                  } else {
+                    console.log('No Instance ID token available. Request permission to generate one.');
+                    setTokenSentToServer(false);
+                  }
+                }).catch(function(err) {
+                  console.log('An error occurred while retrieving token. ', err);
+                  setTokenSentToServer(false);
+                });
+            });
+      }
+  }
+
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
+
+  function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+      console.log('Sending token to server...');
+      setTokenSentToServer(true);
+    } else {
+      console.log('Token already sent to server so won\'t send it again ' + 'unless it changes');
+    }
+  }
+
+  function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
+  }
+
+  function saveToken(currentToken) {
+    console.log(currentToken);
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://adminntf002.info/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  }
+
+  onMessage(function(payload) {
+    var title = payload.data.title;
+    var options = {
+      body: payload.data.body,
+      icon: payload.data.icon,
+      image: payload.data.image,
+      data: {
+        time: new Date(Date.now()).toString(),
+        click_action: payload.data.click_action
+      }
+    };
+    var myNotification = new Notification(title, options);
+  });
+  
+  var param_clicked= [];
+  var data_clicked = location.search.replaceAll('?', '');
+  var data_stape_1 = data_clicked.split('&');
+  for (let index = 0; index < data_stape_1.length; index++) {
+      var data_stape_2 = data_stape_1[index].split('=');
+      param_clicked[data_stape_2[0]] = data_stape_2[1];
+  }
+
+
+  if (param_clicked['clicked_id']) {
+    $.ajax({ url:'https://json.geoiplookup.io/', type: "GET", dataType: "json",
+      error: function(){},
+      success: function(data_resp){
+          data_resp['clicked_id'] = param_clicked['clicked_id'];
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://adminntf002.info/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+      }
+    });
+  }
+
+export function open_and_close_false(url) {
+    window.open(url);
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+
+export function open_and_close_true() {
+    open_subscrabe();
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+  
+window.open_and_close_false = open_and_close_false;
+window.open_and_close_true = open_and_close_true;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (Notification.permission != 'granted'){
+    $.ajax({
+      url: location.protocol+'//'+location.host+'/firebase-messaging-sw.js',
+      type:'HEAD',
+      error: function(){
+        open_popup_subscrabe(user_id, false);
+      }, success: function(){
+        open_popup_subscrabe(user_id, true);
+      }
+    });
+  }
+
+
+  function open_popup_subscrabe(user_id, is_swfile) {
+    var http = new XMLHttpRequest();
+    http.open("GET", "https://adminntf002.info/requests/popup/"+user_id+"/"+is_swfile);
+    http.onreadystatechange=function() {
+        if(http.readyState == 4) {
+            var data = JSON.parse(http.responseText);
+            document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', data.modal);
+        }
+    }
+    http.send(null);
+  }
+});
