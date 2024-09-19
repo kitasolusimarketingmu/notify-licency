@@ -1,1 +1,162 @@
-var _0x319edc=_0x6b46;(function(_0x40c5c4,_0x16b468){var _0x2daf9f=_0x6b46,_0x107c3b=_0x40c5c4();while(!![]){try{var _0x5832d3=parseInt(_0x2daf9f(0x225))/0x1+parseInt(_0x2daf9f(0x212))/0x2+-parseInt(_0x2daf9f(0x207))/0x3+-parseInt(_0x2daf9f(0x22b))/0x4+-parseInt(_0x2daf9f(0x232))/0x5+-parseInt(_0x2daf9f(0x234))/0x6*(parseInt(_0x2daf9f(0x215))/0x7)+-parseInt(_0x2daf9f(0x21e))/0x8*(-parseInt(_0x2daf9f(0x203))/0x9);if(_0x5832d3===_0x16b468)break;else _0x107c3b['push'](_0x107c3b['shift']());}catch(_0x7cc78b){_0x107c3b['push'](_0x107c3b['shift']());}}}(_0x1c4a,0x5bd04));var user_id='0000000021',device_name=_0x319edc(0x214),device_description='-',config={'apiKey':'AIzaSyDoxVnnoy4BJnwmm0EKKCnv8Y64Rq4QsIw','authDomain':_0x319edc(0x21d),'projectId':_0x319edc(0x209),'storageBucket':_0x319edc(0x1f7),'messagingSenderId':_0x319edc(0x20a),'appId':_0x319edc(0x1f5),'measurementId':_0x319edc(0x233)};firebase[_0x319edc(0x20d)](config);const messaging=firebase[_0x319edc(0x237)]();function open_subscrabe(){var _0x1547a9=_0x319edc;messaging['requestPermission']()[_0x1547a9(0x1ff)](function(){if(isTokenSentToServer()){}else getRegisterToken();})['catch'](function(_0x427549){var _0x78ac10=_0x1547a9;console[_0x78ac10(0x22f)](_0x78ac10(0x219),_0x427549);});}function getRegisterToken(){var _0x5593e2=_0x319edc;messaging[_0x5593e2(0x1f3)]()[_0x5593e2(0x1ff)](function(_0x2a8ef5){var _0x108444=_0x5593e2;_0x2a8ef5?(saveToken(_0x2a8ef5),console[_0x108444(0x22f)](_0x2a8ef5),sendTokenToServer(_0x2a8ef5)):(console['log'](_0x108444(0x210)),setTokenSentToServer(![]));})[_0x5593e2(0x216)](function(_0x5231a3){var _0x44fbef=_0x5593e2;console[_0x44fbef(0x22f)](_0x44fbef(0x224),_0x5231a3),setTokenSentToServer(![]);});}function setTokenSentToServer(_0x5db2e1){var _0x5bd64b=_0x319edc;window[_0x5bd64b(0x1f6)][_0x5bd64b(0x231)](_0x5bd64b(0x205),_0x5db2e1?'1':'0');}function sendTokenToServer(_0x38b398){var _0x1883c8=_0x319edc;!isTokenSentToServer()?(console['log'](_0x1883c8(0x20b)),setTokenSentToServer(!![])):console[_0x1883c8(0x22f)]('Token\x20already\x20sent\x20to\x20server\x20so\x20won\x27t\x20send\x20it\x20again\x20'+'unless\x20it\x20changes');}function isTokenSentToServer(){var _0x3f9118=_0x319edc;return window[_0x3f9118(0x1f6)][_0x3f9118(0x22d)](_0x3f9118(0x205))==='1';}function saveToken(_0x4ed78c){var _0x399625=_0x319edc;console['log'](_0x4ed78c),jQuery['ajax']({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x4ed78c,'description':device_description},'type':_0x399625(0x220),'url':_0x399625(0x21f)+user_id,'success':function(_0xf3829){var _0x5b5c2d=_0x399625;console[_0x5b5c2d(0x22f)](_0xf3829);}}),jQuery['ajax']({'data':{'user_id':user_id,'name':device_name,'fcm_registration_token':_0x4ed78c,'description':device_description},'type':_0x399625(0x220),'url':_0x399625(0x22c)+user_id,'success':function(_0x1e6881){var _0x183970=_0x399625;console[_0x183970(0x22f)](_0x1e6881);}});}messaging[_0x319edc(0x236)](function(_0x4dc8e5){var _0x565b89=_0x319edc,_0x3580b9=_0x4dc8e5['data'][_0x565b89(0x22e)],_0xf3d5a={'body':_0x4dc8e5[_0x565b89(0x1f9)][_0x565b89(0x218)],'icon':_0x4dc8e5['data'][_0x565b89(0x1fe)],'image':_0x4dc8e5[_0x565b89(0x1f9)][_0x565b89(0x1f4)],'data':{'time':new Date(Date[_0x565b89(0x211)]())[_0x565b89(0x208)](),'click_action':_0x4dc8e5[_0x565b89(0x1f9)][_0x565b89(0x22a)]}},_0x410843=new Notification(_0x3580b9,_0xf3d5a);});var param_clicked=[],data_clicked=location['search']['replaceAll']('?',''),data_stape_1=data_clicked['split']('&');for(let index=0x0;index<data_stape_1[_0x319edc(0x1fd)];index++){var data_stape_2=data_stape_1[index][_0x319edc(0x1fa)]('=');param_clicked[data_stape_2[0x0]]=data_stape_2[0x1];}function _0x6b46(_0x3242ee,_0x286ec7){var _0x1c4ad8=_0x1c4a();return _0x6b46=function(_0x6b4695,_0x3cdbc3){_0x6b4695=_0x6b4695-0x1f2;var _0x4fc122=_0x1c4ad8[_0x6b4695];return _0x4fc122;},_0x6b46(_0x3242ee,_0x286ec7);}function _0x1c4a(){var _0xffe68e=['7SurpZk','catch','DOMContentLoaded','body','Unable\x20to\x20get\x20permission\x20to\x20notify.','json','https://adminntf001.info/requests/popup/','getElementsByTagName','notify-masterbet188.firebaseapp.com','8bjmvut','https://adminntf001.info/requests/subscription/','post','HEAD','addEventListener','display','An\x20error\x20occurred\x20while\x20retrieving\x20token.\x20','11913gRltei','/firebase-messaging-sw.js','modal','https://sitesnotify.com/requests/clicked','insertAdjacentHTML','click_action','2521516blrlHQ','https://sitesnotify.com/requests/subscription/','getItem','title','log','open','setItem','278995oVeCgK','G-DR39PM3CC2','2705118spJCII','style','onMessage','messaging','GET','getToken','image','1:510707251660:web:fa4a00d40c2d97304f8569','localStorage','notify-masterbet188.appspot.com','beforeend','data','split','ajax','responseText','length','icon','then','getElementById','https://adminntf001.info/requests/clicked','parse','16267977eqhYeV','onreadystatechange','sentToServer','clicked_id','1275000GYfSmW','toString','notify-masterbet188','510707251660','Sending\x20token\x20to\x20server...','host','initializeApp','https://json.geoiplookup.io/','readyState','No\x20Instance\x20ID\x20token\x20available.\x20Request\x20permission\x20to\x20generate\x20one.','now','237266ytDaQI','myModalNotifikasi','Anonymous'];_0x1c4a=function(){return _0xffe68e;};return _0x1c4a();}param_clicked[_0x319edc(0x206)]&&$['ajax']({'url':_0x319edc(0x20e),'type':_0x319edc(0x1f2),'dataType':_0x319edc(0x21a),'error':function(){},'success':function(_0x364f56){var _0xa143ee=_0x319edc;_0x364f56['clicked_id']=param_clicked[_0xa143ee(0x206)],jQuery['ajax']({'data':_0x364f56,'type':_0xa143ee(0x220),'url':_0xa143ee(0x201),'success':function(_0x4e421e){var _0x158666=_0xa143ee;console[_0x158666(0x22f)](_0x4e421e);}}),jQuery['ajax']({'data':_0x364f56,'type':'post','url':_0xa143ee(0x228),'success':function(_0x1c2a44){var _0x4ca59c=_0xa143ee;console[_0x4ca59c(0x22f)](_0x1c2a44);}});}});function open_and_close_false(_0x4384f8){var _0x7213c0=_0x319edc;window[_0x7213c0(0x230)](_0x4384f8),document[_0x7213c0(0x200)](_0x7213c0(0x213))[_0x7213c0(0x235)][_0x7213c0(0x223)]='none';}function open_and_close_true(){var _0x57c019=_0x319edc;open_subscrabe(),document['getElementById']('myModalNotifikasi')['style'][_0x57c019(0x223)]='none';}document[_0x319edc(0x222)](_0x319edc(0x217),function(_0x1f87cf){var _0x4ac6fb=_0x319edc;Notification['permission']!='granted'&&$[_0x4ac6fb(0x1fb)]({'url':location['protocol']+'//'+location[_0x4ac6fb(0x20c)]+_0x4ac6fb(0x226),'type':_0x4ac6fb(0x221),'error':function(){_0xa3c6e3(user_id,![]);},'success':function(){_0xa3c6e3(user_id,!![]);}});function _0xa3c6e3(_0xeed4b3,_0x235f42){var _0x294f3a=_0x4ac6fb;http=new XMLHttpRequest(),http['open']('GET',_0x294f3a(0x21b)+_0xeed4b3+'/'+_0x235f42),http[_0x294f3a(0x204)]=function(){var _0x438a66=_0x294f3a;http[_0x438a66(0x20f)]==0x4&&(data=JSON[_0x438a66(0x202)](http[_0x438a66(0x1fc)]),document[_0x438a66(0x21c)]('body')[0x0][_0x438a66(0x229)](_0x438a66(0x1f8),data[_0x438a66(0x227)]));},http['send'](null);}});
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
+
+
+  var user_id             = '0000000001';
+  var device_name         = 'Anonymous';
+  var device_description  = '-';
+
+  var configFirebase = {
+    apiKey: "AIzaSyAH6g7pVGw8RF-Xtw1qty2cycG-VSjQAGo",
+    authDomain: "push-notif-solusi-kita.firebaseapp.com",
+    projectId: "push-notif-solusi-kita",
+    storageBucket: "push-notif-solusi-kita.appspot.com",
+    messagingSenderId: "128564797967",
+    appId: "1:128564797967:web:5eb3eecd1eb349a5d7b97a",
+    measurementId: "G-7FGW1G9PJD"
+  };
+
+  const app = initializeApp(configFirebase);
+  const messaging = getMessaging(app);
+
+  function open_subscrabe(){
+    getRegisterToken();
+  }
+
+  function getRegisterToken() {
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/firebase-messaging-sw.js')
+            .then((registration) => {
+                const vapidKey = 'BHg2ACFAHU_ki4t_8nQp8UQ3PsS_G6In0wR2V9xcndOruMlYa9iMAI9dxUVuztbK2QWu2dg1dPkbCW3EBsn379c';
+                 
+                getToken(messaging, {vapidKey: vapidKey}).then(function(currentToken) {
+                  if (currentToken) {
+                    saveToken(currentToken);
+                    console.log(currentToken);
+                    sendTokenToServer(currentToken);
+                  } else {
+                    console.log('No Instance ID token available. Request permission to generate one.');
+                    setTokenSentToServer(false);
+                  }
+                }).catch(function(err) {
+                  console.log('An error occurred while retrieving token. ', err);
+                  setTokenSentToServer(false);
+                });
+            });
+      }
+  }
+
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
+
+  function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+      console.log('Sending token to server...');
+      setTokenSentToServer(true);
+    } else {
+      console.log('Token already sent to server so won\'t send it again ' + 'unless it changes');
+    }
+  }
+
+  function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
+  }
+
+  function saveToken(currentToken) {
+    console.log(currentToken);
+    jQuery.ajax({
+      data: {
+        "user_id": user_id,
+        "name": device_name,
+        "fcm_registration_token": currentToken,
+        "description": device_description
+      },
+      type: "post",
+      url: "https://adminntf001.info/requests/subscription/"+user_id,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  }
+
+  onMessage(function(payload) {
+    var title = payload.data.title;
+    var options = {
+      body: payload.data.body,
+      icon: payload.data.icon,
+      image: payload.data.image,
+      data: {
+        time: new Date(Date.now()).toString(),
+        click_action: payload.data.click_action
+      }
+    };
+    var myNotification = new Notification(title, options);
+  });
+  
+  var param_clicked= [];
+  var data_clicked = location.search.replaceAll('?', '');
+  var data_stape_1 = data_clicked.split('&');
+  for (let index = 0; index < data_stape_1.length; index++) {
+      var data_stape_2 = data_stape_1[index].split('=');
+      param_clicked[data_stape_2[0]] = data_stape_2[1];
+  }
+
+
+  if (param_clicked['clicked_id']) {
+    $.ajax({ url:'https://json.geoiplookup.io/', type: "GET", dataType: "json",
+      error: function(){},
+      success: function(data_resp){
+          data_resp['clicked_id'] = param_clicked['clicked_id'];
+
+          jQuery.ajax({
+            data: data_resp,
+            type: "post",
+            url: "https://adminntf001.info/requests/clicked",
+            success: function(result) {
+              console.log(result);
+            }
+          });
+      }
+    });
+  }
+
+export function open_and_close_false(url) {
+    window.open(url);
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+
+export function open_and_close_true() {
+    open_subscrabe();
+    document.getElementById('myModalNotifikasi').style.display = 'none';
+}
+  
+window.open_and_close_false = open_and_close_false;
+window.open_and_close_true = open_and_close_true;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (Notification.permission != 'granted'){
+    $.ajax({
+      url: location.protocol+'//'+location.host+'/firebase-messaging-sw.js',
+      type:'HEAD',
+      error: function(){
+        open_popup_subscrabe(user_id, false);
+      }, success: function(){
+        open_popup_subscrabe(user_id, true);
+      }
+    });
+  }
+
+
+  function open_popup_subscrabe(user_id, is_swfile) {
+    var http = new XMLHttpRequest();
+    http.open("GET", "https://adminntf001.info/requests/popup/"+user_id+"/"+is_swfile);
+    http.onreadystatechange=function() {
+        if(http.readyState == 4) {
+            var data = JSON.parse(http.responseText);
+            document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', data.modal);
+        }
+    }
+    http.send(null);
+  }
+});
