@@ -21,7 +21,7 @@ $(document).ready(function(){
       var left = ((width / 2) - (width / 2)) + dualScreenLeft;
       var top = ((height / 2) - (height / 2)) + dualScreenTop;
 
-      window.open("https://adminntf002.info/", "Dapatkan Notifikasi Terbaru", "width=500,height=500, top=' + top + ', left=' + left");
+      window.open(custom_domain_base, "Dapatkan Notifikasi Terbaru", "width=500,height=500, top=' + top + ', left=' + left");
     });
 
     function checkPopup() {
