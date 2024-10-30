@@ -36,7 +36,7 @@ $(document).ready(function(){
   $.ajax({ url:custom_domain_base+'/requests/get_asset_popup/'+notify_id, type: "GET", dataType: "json",
         error: function(){},
         success: function(data){
-            $('.pa-subs-icon').attr('src', data.page_favicon);
+            $('.pa-subs-icon').attr('src', custom_domain_base+'/'+data.page_favicon);
             $('.pa-subs-title-txt').html(data.popup_title);
         }
     });
