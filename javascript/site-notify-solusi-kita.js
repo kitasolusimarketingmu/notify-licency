@@ -2,7 +2,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebas
 import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
 
 
-  var user_id             = '0000000001';
+  var user_id             = notify_id ? notify_id : '0000000001';
   var device_name         = 'Anonymous';
   var device_description  = '-';
   var base_domain_notif   = custom_domain_base ? custom_domain_base : 'https://adaadaaja.solusimarketingkita.com';
