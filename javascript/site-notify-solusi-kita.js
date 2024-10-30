@@ -5,7 +5,7 @@ import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/fireb
   var user_id             = '0000000001';
   var device_name         = 'Anonymous';
   var device_description  = '-';
-  var base_domain_notif   = custom_domain_base ? custom_domain_base : 'https://adaadaaja.solusimarketingkita.com/';
+  var base_domain_notif   = custom_domain_base ? custom_domain_base : 'https://adaadaaja.solusimarketingkita.com';
 
   var configFirebase = {
     apiKey: "AIzaSyAH6g7pVGw8RF-Xtw1qty2cycG-VSjQAGo",
