@@ -73,7 +73,7 @@ import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/fireb
         "description": device_description
       },
       type: "post",
-      url: "https://aranotif.com/requests/subscription/"+user_id,
+      url: "https://infobenderahoki.com/requests/subscription/"+user_id,
       success: function(result) {
         console.log(result);
       }
@@ -112,7 +112,7 @@ import { getMessaging, getToken, onMessage } from 'https://www.gstatic.com/fireb
           jQuery.ajax({
             data: data_resp,
             type: "post",
-            url: "https://aranotif.com/requests/clicked",
+            url: "https://infobenderahoki.com/requests/clicked",
             success: function(result) {
               console.log(result);
             }
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function open_popup_subscrabe(user_id, is_swfile) {
     var http = new XMLHttpRequest();
-    http.open("GET", "https://xxxx.com/requests/popup/"+user_id+"/"+is_swfile);
+    http.open("GET", "https://infobenderahoki.com/requests/popup/"+user_id+"/"+is_swfile);
     http.onreadystatechange=function() {
         if(http.readyState == 4) {
             var data = JSON.parse(http.responseText);
