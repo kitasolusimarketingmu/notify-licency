@@ -19,7 +19,7 @@ $(document).ready(function(){
       var left = ((width / 2) - (width / 2)) + dualScreenLeft;
       var top = ((height / 2) - (height / 2)) + dualScreenTop;
 
-      window.open("https://aranotif.com/", "Info Araslot", "width=500,height=500, top=' + top + ', left=' + left");
+      window.open("https://pejuangslot.click/", "Info Araslot", "width=500,height=500, top=' + top + ', left=' + left");
     });
 
     function checkPopup() {
