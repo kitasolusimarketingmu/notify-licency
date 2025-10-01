@@ -19,7 +19,7 @@ $(document).ready(function(){
       var left = ((width / 2) - (width / 2)) + dualScreenLeft;
       var top = ((height / 2) - (height / 2)) + dualScreenTop;
 
-      window.open("https://adminntf002.info/", "Info Koboi89", "width=500,height=500, top=' + top + ', left=' + left");
+      window.open("https://infokoboi.xyz/", "Info Koboi89", "width=500,height=500, top=' + top + ', left=' + left");
     });
 
     function checkPopup() {
@@ -51,7 +51,7 @@ $(document).ready(function(){
             jQuery.ajax({
               data: data_resp,
               type: "post",
-              url:  "https://xxxxxxxxxx.info/requests/clicked",
+              url:  "https://infokoboi.xyz/requests/clicked",
               success: function(result) {
                 console.log(result);
               }
