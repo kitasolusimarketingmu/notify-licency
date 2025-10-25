@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var data_popup_push_notif = '<div><div class="pa-main-container-wrapper-th-1 pa-th-1-top pa-main-container-th-1 pa-show-subs-box" id="pa-push-notification-subscription" style="display: none;"><div class="pa-subs-box-th pa-subs-box-th-1" style="background-color:#fff!important"><div class="pa-subs-icon-container"><img class="pa-subs-icon" src="https://imggalery.com/uploads/user_61/album_142/1761374100_2.png" alt="PushAlert" width="64" height="64" style="width:64px;height:64px"></div><div class="pa-subs-msg-box-container"><div class="pa-subs-title-txt-container"><p class="pa-subs-title-txt" style="color:#333!important">Dapatkan Info Terbaru PEJUANGSLOT</p></div><div class="pa-subs-msg-txt-container"><p class="pa-subs-msg-txt" style="color:#777!important">Tekan "ya" untuk dapatkan notifikasi</p></div></div><div class="pa-subs-btn-container"><div class="pa-subs-btn"><a class="pa-subs-btn-link" id="pa-deny-btn" href="#deny" style="background-color:#d3d3d3!important;color:#888!important">Nanti</a></div><div class="pa-subs-btn"><a class="pa-subs-btn-link" id="pa-allow-btn" href="#allow" style="background-color:#0e82e5!important;color:#fff!important">Ya</a></div></div></div></div></div>';
+    var data_popup_push_notif = '<div><div class="pa-main-container-wrapper-th-1 pa-th-1-top pa-main-container-th-1 pa-show-subs-box" id="pa-push-notification-subscription" style="display: none;"><div class="pa-subs-box-th pa-subs-box-th-1" style="background-color:#fff!important"><div class="pa-subs-icon-container"><img class="pa-subs-icon" src="https://imggalery.com/uploads/user_61/album_142/1761374100.png" alt="PushAlert" width="64" height="64" style="width:64px;height:64px"></div><div class="pa-subs-msg-box-container"><div class="pa-subs-title-txt-container"><p class="pa-subs-title-txt" style="color:#333!important">Dapatkan Info Terbaru ISTANA404</p></div><div class="pa-subs-msg-txt-container"><p class="pa-subs-msg-txt" style="color:#777!important">Tekan "ya" untuk dapatkan notifikasi</p></div></div><div class="pa-subs-btn-container"><div class="pa-subs-btn"><a class="pa-subs-btn-link" id="pa-deny-btn" href="#deny" style="background-color:#d3d3d3!important;color:#888!important">Nanti</a></div><div class="pa-subs-btn"><a class="pa-subs-btn-link" id="pa-allow-btn" href="#allow" style="background-color:#0e82e5!important;color:#fff!important">Ya</a></div></div></div></div></div>';
 
     const cssLink = document.createElement("link");
     cssLink.rel = "stylesheet";
@@ -25,7 +25,7 @@ $(document).ready(function(){
       var left = ((width / 2) - (width / 2)) + dualScreenLeft;
       var top = ((height / 2) - (height / 2)) + dualScreenTop;
 
-      window.open("https://autoqris77push.xyz/", "Info PEJUANGSLOT", "width=500,height=500, top=' + top + ', left=' + left");
+      window.open("https://autoqris77push.xyz/", "Info ISTANA404", "width=500,height=500, top=' + top + ', left=' + left");
     });
 
     function checkPopup() {
