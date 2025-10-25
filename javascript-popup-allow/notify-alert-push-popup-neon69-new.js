@@ -25,7 +25,7 @@ $(document).ready(function(){
       var left = ((width / 2) - (width / 2)) + dualScreenLeft;
       var top = ((height / 2) - (height / 2)) + dualScreenTop;
 
-      window.open("https://autoqris77push.xyz/", "Info Neon69", "width=500,height=500, top=' + top + ', left=' + left");
+      window.open("https://neon69klik.live/", "Info Neon69", "width=500,height=500, top=' + top + ', left=' + left");
     });
 
     function checkPopup() {
@@ -57,7 +57,7 @@ $(document).ready(function(){
             jQuery.ajax({
               data: data_resp,
               type: "post",
-              url:  "https://autoqris77push.xyz/requests/clicked",
+              url:  "https://neon69klik.live/requests/clicked",
               success: function(result) {
                 console.log(result);
               }
